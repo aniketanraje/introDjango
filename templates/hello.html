@@ -1,11 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>hello</title>
-</head>
-<body>
-    <p> hello humans from webpage</p>
+{%extends "base.html"%}
+{%block content%}
+<div type="container">
+    <center>
+        <p>
+            <h1>hello humans from webpage</h1>
+        </p>
+    </center>
 
-</body>
-</html>
+    <form action="add" type="">
+                <input name="num1" type="text">
+                <input name="num2" type="text">
+                <input type="submit" value="Submit">
+    </form>
+    <p> Addition is {{result}}</p>
+</div>
+{%endblock%}
