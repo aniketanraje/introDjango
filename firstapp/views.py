@@ -10,7 +10,6 @@ def hello(request):
 def hello_from_html(request):
     return render(request, "hello.html")
 
-
 def add(request):
     num1 = request.POST["num1"]
     num2 = request.POST["num2"]
