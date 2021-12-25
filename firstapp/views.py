@@ -12,8 +12,8 @@ def hello_from_html(request):
 
 
 def add(request):
-    num1 = request.GET["num1"]
-    num2 = request.GET["num2"]
+    num1 = request.POST["num1"]
+    num2 = request.POST["num2"]
     addition = int(num1) + int(num2)
     result = num1 + num2
     print("result:", result)

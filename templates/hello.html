@@ -7,7 +7,8 @@
         </p>
     </center>
 
-    <form action="add" type="">
+    <form action="add" method="post">
+        {%csrf_token%}
                 <input name="num1" type="text">
                 <input name="num2" type="text">
                 <input type="submit" value="Submit">
